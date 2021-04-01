@@ -11,13 +11,13 @@
         <!--navigation-->
         <nav class="ui inverted attached segment m-padded-tb-mini">
             <div class="ui container">
-                <div class="ui inverted menu">
+                <div class="ui inverted secondary stackable menu">
                     <h2 class="ui teal header item">Blog</h2>
-                    <a href="#" class="item"><i class="home icon"></i>page</a>
-                    <a href="#" class="item"><i class="idea icon"></i>Category</a>
-                    <a href="#" class="item"><i class="tags icon"></i>Tag</a>
-                    <a href="#" class="item"><i class="info icon"></i>About me</a>
-                    <div class="right item">
+                    <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>page</a>
+                    <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>Category</a>
+                    <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>Tag</a>
+                    <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>About me</a>
+                    <div class="right m-item item m-mobile-hide">
                         <div class="ui icon inverted transparent input">
                             <input type="text" placeholder="Search....">
                             <i class="search link icon"></i>
@@ -26,13 +26,15 @@
                     
                 </div>
             </div>
-            
+            <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+                <i class="sidebar icon"></i>
+            </a>
         </nav>
 
         <!--content-->
-        <div class="m-container m-padded-tb-large">
+        <div class="m-container m-padded-tb-big">
             <div class="ui container">
-                <div class="ui grid">
+                <div class="ui stackable grid">
                     <!--left blog list-->
                     <div class="eleven wide column">
                         <!--header-->
@@ -50,7 +52,7 @@
                         <!--content-->
                         <div class="ui attached segment">
                             <div class="ui padded vertical segment m-padded-tb-large">
-                                <div class="ui grid">
+                                <div class="ui mobile reversed stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui header">The first Blog</h3>
                                         <p class="m-text">Hard working and self-motivated computer programmer graduate seeking entry level developer position.</p>
@@ -83,7 +85,7 @@
                                 </div>
                             </div>
                             <div class="ui padded vertical segment m-padded-tb-large">
-                                <div class="ui grid">
+                                <div class="ui mobile reversed stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui header">The first Blog</h3>
                                         <p class="m-text">Hard working and self-motivated computer programmer graduate seeking entry level developer position.</p>
@@ -116,7 +118,7 @@
                                 </div>
                             </div>
                             <div class="ui padded vertical segment m-padded-tb-large">
-                                <div class="ui grid">
+                                <div class="ui mobile reversed stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui header">The first Blog</h3>
                                         <p class="m-text">Hard working and self-motivated computer programmer graduate seeking entry level developer position.</p>
@@ -149,7 +151,7 @@
                                 </div>
                             </div>
                             <div class="ui padded vertical segment m-padded-tb-large">
-                                <div class="ui grid">
+                                <div class="ui mobile reversed stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui header">The first Blog</h3>
                                         <p class="m-text">Hard working and self-motivated computer programmer graduate seeking entry level developer position.</p>
@@ -182,7 +184,7 @@
                                 </div>
                             </div>
                             <div class="ui padded vertical segment m-padded-tb-large">
-                                <div class="ui grid">
+                                <div class="ui mobile reversed stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui header">The first Blog</h3>
                                         <p class="m-text">Hard working and self-motivated computer programmer graduate seeking entry level developer position.</p>
@@ -214,6 +216,7 @@
                                     </div>
                                 </div>
                             </div>
+
 
                         </div>
                         
@@ -331,9 +334,9 @@
         <!--footer-->
         <footer class="ui inverted vertical segment m-padded-tb-massive">
             <div class="ui center aligned container">
-                <div class="ui inverted divided grid">
+                <div class="ui inverted divided  stackable grid">
                     <div class="three wide column">
-                        <img src="./static/images/wechat.jpg" class="ui rounded image" alt="" style="width: 120px;">
+                        <img src="./static/images/wechat.jpg" class="ui centered rounded image" alt="" style="width: 120px;">
                     </div>
                     <div class="four wide column">
                         <h4 class="ui inverted header m-text-thin m-text-spaced">The latest Blog</h4>
@@ -356,11 +359,17 @@
                     </div>
                 </div>
                 <div class="ui inverted section divider"></div>
-                <p class="m-text-thin m-text-spaced m-opacity-mini">Copyright © 2021 Siyuan Yu Designed by Siyuan Yu</p>
+                <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2021 Siyuan Yu Designed by Siyuan Yu</p>
             </div>
 
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+        <script>
+            $('.menu.toggle').click(function() {
+                $('.m-item').toggleClass('m-mobile-hide');
+            });
+        </script>
     </body>
 </html>

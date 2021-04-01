@@ -1,4 +1,7 @@
 
+body {
+    background: url("../images/bg.png");
+}
 .m-padded-mini {
     padding: 0.2em !important;
 }
@@ -38,6 +41,11 @@
     padding-bottom: 5em !important;
 }
 
+.m-padded-lr {
+    padding-left: 4em !important;
+    padding-right: 4em !important;
+}
+
 /*--------text---------*/
 .m-text {
     font-weight: 300 !important;
@@ -74,7 +82,16 @@
 .m-opacity-mini {
     opacity: 0.8 !important;
 }
+.m-opacity-tiny {
+    opacity: 0.6 !important;
+}
 
+/*--------position--------*/
+.m-right-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 /*------display-----*/
 
 
@@ -87,8 +104,25 @@
     max-width: 72em !important;
     margin: auto !important;
 }
+.m-container-small {
+    max-width: 60em !important;
+    margin: auto !important;
+}
 
 /*------color-------*/
 .m-black {
     color: #333 !important;
+}
+
+.m-mobile-show {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px){
+    .m-mobile-hide {
+        display: none !important;
+    }
+    .m-mobile-show {
+        display: block !important;
+    }
 }
