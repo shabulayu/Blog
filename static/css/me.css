@@ -8,6 +8,9 @@ body {
 .m-padded-tiny {
     padding: 0.3em !important;
 }
+.m-padded {
+    padding: 1em !important;
+}
 .m-padded-tb-mini {
     padding-top: 0.2em !important;
     padding-bottom: 0.2em !important;
@@ -94,6 +97,16 @@ body {
     top: 0;
     right: 0;
 }
+
+.m-fixed {
+    position: fixed !important;
+    z-index: 10 !important;
+}
+.m-right-bottom {
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
 /*------display-----*/
 
 
@@ -116,6 +129,7 @@ body {
     -webkit-box-shadow: 0 10px 10px rgba(0,0,0,0.5) !important;
     box-shadow: 0 10px 10px rgba(0,0,0,0.5) !important;
 }
+
 
 /*------color-------*/
 .m-black {
